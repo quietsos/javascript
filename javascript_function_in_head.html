@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>This is a demo script</title>
+		<script>
+			// function myFunction(){
+				// 	document.getElementById('call').innerHTML="paragraph Changed."
+			// }
+			function lightOn(){
+				document.getElementById('light').src="/media/sos/_dev_sda5/javascript/javascript/images/on.jpeg";
+			}
+			function lightOff(){
+				document.getElementById('light').src="/media/sos/_dev_sda5/javascript/javascript/images/off.png"
+			}
+		</script>
+	</head>
+	<body>
+		<!-- 	<h2>Javascript function will call when you click the below button.</h2>
+		<p id="call"> This is paragraph.</p>
+		<button type="button" onclick="myFunction()">Click me</button> -->
+		<h2>Javascript can change the html attribute.</h2>
+		<button type="button" onclick="lightOn() ">Turn on</button>
+		<img id="light" src="/media/sos/_dev_sda5/javascript/javascript/images/off.png" style='width:100px' >
+		<button type="button" onclick="lightOff()"> Turn off</button>
+	</body>
+</html>
