@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>This is a demo script</title>
+</head>
+<body>
+	<h2>Javascript funciton. </h2>
+	<p>Javascript function is creating and calling within the body section of html page.</p>
+
+	<button type="button" onclick="lightOn()">Turn on</button>
+	<img id='light' src="/media/sos/_dev_sda5/javascript/javascript/images/off.png" style="width: 100px">
+	<button type="button" onclick="lightOff()">Turn off</button>
+
+	<script>
+		function lightOn(){ 
+			document.getElementById('light').src="/media/sos/_dev_sda5/javascript/javascript/images/on.jpeg";
+		}
+
+		function lightOff(){
+			document.getElementById('light').src="/media/sos/_dev_sda5/javascript/javascript/images/off.png";
+		}
+	</script>
+
+</body>
+</html>
