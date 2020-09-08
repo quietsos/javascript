@@ -1,0 +1,28 @@
+<!-- Javascript can display in four different ways.
+1. Writging into HTML element using innerHTML.
+2. Writting into HTML output using document.write()
+3. Writting into an alert box, using window.alert()
+4. Writting into the browser console using console.log()
+-->
+<!-- innerHTML -->
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>This is a demo script</title>
+	</head>
+	<body>
+		<h2>Data access using innerHTML</h2>
+		<p id="sum"></p>
+		<p id="write"></p>
+		<script>
+			document.getElementById('sum').innerHTML=5+5;
+			document.write(5+6);
+			window.alert(3*4);
+			alert("This is a window alert.")
+			console.log(10+5);
+		</script>
+		<br>
+		<button type="button" onclick="document.write(8+8)">Try it</button>
+		
+	</body>
+</html>
