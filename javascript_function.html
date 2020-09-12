@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>This is a demo script.</title>
+</head>
+<body>
+	<h1>Javascript function.</h1>
+	<p id="show_date"> </p>
+	<!-- <button type="button" onclick="document.getElementById('show_date').innerHTML=Date()"> click me.</button> -->
+	<button type="button" onclick="show_date()">click me</button>
+	<p id="sum"></p>
+
+	<script>
+		function show_date(){
+			document.getElementById('show_date').innerHTML=Date();
+		}
+
+		var x;
+		x = "The summesion is: " + sum() + ".";
+		document.getElementById('sum').innerHTML= x;
+
+		function sum() {
+			a = 5;
+			b = 5;
+			return a+b;
+			
+		}
+	</script>
+</body>
+</html>
