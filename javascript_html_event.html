@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>This is a demo script.</title>
+</head>
+<body>
+	<h2>Javascript Events.</h2>
+	<p id="show_date"></p>
+
+	<button type='button' onclick="dateShow()">Here</button>
+	<br>
+	<br>
+	<button type="button" onclick="this.innerHTML=Date()">Here</button>
+	<br>
+	<br>
+	<button type="button" onmouseover="dateShow()">Here</button>
+	<br>
+	<br>
+	<button type="button" onmousedown="dateShow()"> Here</button>
+	<br>
+	<br>
+	<button type="button" onkeydown="dateShow()"> Here</button>
+
+	<script>
+		function dateShow(){
+			document.getElementById('show_date').innerHTML=Date();
+		}
+	</script>
+	
+</body>
+</html>
