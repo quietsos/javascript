@@ -6,6 +6,7 @@
 <body>
 	<h2>Javascript object</h2>
 	<p id='show_object'></p>
+	<p id="fullName"></p>
 
 
 
@@ -18,15 +19,26 @@
 		// 	last_name : "Shohanuzzaman",
 		// 	age : 22,
 		// 	eyecolor : "black",
-		// 	profession : "student"
+		// 	profession : "student",
+		// fullname : function(){
+		// 		return this.first_name + " " + this.last_name;
+		// 	}
 		// };
 
 		var person = {
-			first_name: "md", last_name: "Shohanuzzaman", age:22, eyecolor:"blue", profession:"student"
+			first_name: "md", last_name: "Shohanuzzaman", age:22, eyecolor:"blue", profession:"student",
+
+			fullname : function(){
+				return this.first_name + " " + this.last_name;
+			}
 		};
 
 
 		document.getElementById('show_object').innerHTML = person.first_name + " " + person.last_name + " age " + person.age + " eyecolor " + person.eyecolor + " profession " + person.profession + ".";
+
+		document.getElementById('fullName').innerHTML = person.fullname();
 	</script>
+
+
 </body>
 </html>
