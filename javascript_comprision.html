@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>This is a demo script.</title>
+</head>
+<body>
+	<h2>Javascript comprision Test</h2>
+	<p>Enter you age</p>
+	<input id="age" value="18">
+	<button type="button" onclick="myFunction()">Check.</button>
+	<p id="compare"></p>
+
+	<script>
+		
+		function myFunction(){
+
+			var age, type;
+
+			age = Number(document.getElementById('age').value);
+
+			if(isNaN(age)){
+				type = "Input a valid age";
+			}
+
+			else if(age > 18){
+				type = "Too old";
+			}
+			else{
+				type = "Too young";
+			}
+
+			document.getElementById('compare').innerHTML = type;
+		}
+	</script>
+</body>
+</html>
