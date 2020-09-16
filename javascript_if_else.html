@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>This is a demo script</title>
+</head>
+<body>
+	<h2>Javascript if else test.</h2>
+	<p>Click to check the status of a day.</p>
+	<p id="time"></p>
+	<button type="button" onclick="myFunction()">Click </button>
+
+	<script>
+		function myFunction(){
+			var status;
+			var time = new Date().getHours();
+
+			if (time < 10) {
+				status = "Good Morning";
+			}
+			else if(time < 20){
+				status = "Good Day";
+			}
+
+			else{
+				status = "Good Evening"
+			}
+
+			document.getElementById('time').innerHTML = status;
+		}
+	</script>
+
+</body>
+</html>
