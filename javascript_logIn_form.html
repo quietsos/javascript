@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>This is a demo script</title>
+	</head>
+	<body>
+		<h2>Javascript login form validation</h2>
+		<p>Write a number 1 - 10.</p>
+		<input id="enter">
+		<button type="button" onclick="formValidation()">submit</button>
+		<p id="show"></p>
+		<script>
+			function formValidation(){
+				var x, text;
+				x = document.getElementById("enter").value;
+				if(isNaN(x) || x < 1 || x > 10){
+					text = "Input a valid number";
+				}
+				else{
+					text = "Input Ok";
+				}
+				document.getElementsByTagName("show").innerHTML = text;
+			}
+		</script>
+	</body>
+</html>
