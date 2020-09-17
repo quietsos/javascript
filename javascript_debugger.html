@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>This is a demo script.</title>
+</head>
+<body>
+	<h2>Javascript debugger.</h2>
+	<p id="bug"></p>
+	<p>With the debugger turned on, the code below should stop executing before it executes the third line.</p>
+
+	<script>
+		var x = 15*5;
+		debugger;
+		document.getElementById('bug').innerHTML = x;
+	</script>
+
+</body>
+</html>
