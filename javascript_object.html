@@ -14,16 +14,16 @@
 
 
 	<script>
-		var person = {
-			first_name : "Md",
-			last_name : "Shohanuzzaman",
-			age : 22,
-			eyecolor : "black",
-			profession : "student",
-		fullname : function(){
-				return this.first_name + " " + this.last_name;
-			}
-		};
+		// var person = {
+		// 	first_name : "Md",
+		// 	last_name : "Shohanuzzaman",
+		// 	age : 22,
+		// 	eyecolor : "black",
+		// 	profession : "student",
+		// fullname : function(){
+		// 		return this.first_name + " " + this.last_name;
+		// 	}
+		// };
 
 		// var person = {
 		// 	first_name: "md", last_name: "Shohanuzzaman", age:22, eyecolor:"blue", profession:"student",
@@ -33,10 +33,18 @@
 		// 	}
 		// };
 
+		var person = new Object();
+		person.first_name = "Md";
+		person.last_name = "Shohanuzzaman";
+		person.age = 22;
+		person.eyecolor = "black";
+		person.profession = "student";
+		
+
 
 		document.getElementById('show_object').innerHTML = person.first_name + " " + person.last_name + " age " + person.age + " eyecolor " + person.eyecolor + " profession " + person.profession + ".";
 
-		document.getElementById('fullName').innerHTML = person.fullname();
+		// document.getElementById('fullName').innerHTML = person.fullname();
 	</script>
 
 
