@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>This is a demo script.</title>
+</head>
+<body>
+	<h2>Javascript object looping.</h2>
+
+	<p id="show"></p>
+
+
+
+	<script>
+		
+		var person = { firstName:"Md", lastName: "Shohanuzzaman", age:22};
+		person.nationality = "Bangladeshi";
+		delete person.lastName;
+		var x, txt="";
+
+		for(x in person){
+			txt += person[x]+ " ";
+		}
+		document.getElementById('show').innerHTML = txt;
+
+
+	</script>
+
+</body>
+</html>
