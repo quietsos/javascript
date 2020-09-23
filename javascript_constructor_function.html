@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>This is a demo script</title>
+</head>
+<body>
+<h2>Javacript constructor function</h2>
+
+
+
+<p id="show"></p>
+
+
+<script>
+
+	function myFunction(first, last, age, eye){
+
+		this.firstName = first;
+		this.lastName = last;
+		this.age = age;
+		this.eyeColor = eye;
+	}
+
+	var constructor = new myFunction("Md", "Shohanuzzaman", 22, "black");
+
+	document.getElementById('show').innerHTML = "I am " + constructor.firstName + " " + constructor.lastName + "age is " + constructor.age + " eye color is"+ constructor.eyeColor;
+	
+
+
+</script>
+</body>
+</html>

@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>This is a demo script</title>
+</head>
+<body>
+	<h2>Javascript convert an object to array.</h2>
+
+	<p id="show"></p>
+
+	<script>
+		var person = {firstName:"Md", lastName:"Shohanuzzaman", age:22};
+		var myArray = Object.values(person);
+
+		document.getElementById('show').innerHTML = myArray;
+	</script>
+
+</body>
+</html>

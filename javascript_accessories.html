@@ -1,0 +1,33 @@
+<!-- Javascript Getter(The get keyword) -->
+<!DOCTYPE html>
+<html>
+<head>
+	<title>This is a demo script</title>
+</head>
+<body>
+
+	<h2>Javascipt get keyword</h2>
+	<p id="show"></p>
+
+	<script>
+
+		var person = {
+			firstName: "Md", lastName: "Shohanuzzaman", age:" ",
+			// get lang(){
+			// 	return this.age;
+			// }
+
+			set lang(lang){
+				this.age = lang;
+
+			}
+		};
+
+		person.lang = "23"
+		document.getElementById('show').innerHTML = person.lang;
+		document.getElementById('show').innerHTML = person.age;
+
+	</script>
+
+</body>
+</html>
