@@ -22,8 +22,11 @@
 	}
 
 	var constructor = new myFunction("Md", "Shohanuzzaman", 22, "black");
+	var myFriend = new myFunction("Md", "Sajid", 22, "black");
 
-	document.getElementById('show').innerHTML = "I am " + constructor.firstName + " " + constructor.lastName + "age is " + constructor.age + " eye color is"+ constructor.eyeColor;
+	myFriend.nationality = "Bangladeshi";
+
+	document.getElementById('show').innerHTML = "I am " + constructor.firstName + " " + constructor.lastName + "age is " + constructor.age + " eye color is"+ constructor.eyeColor + " My friend is " + myFriend.firstName + " " + myFriend.lastName + "age is " + myFriend.age + "eye color is " + myFriend.eyeColor + " nationality is " + myFriend.nationality;
 	
 
 
