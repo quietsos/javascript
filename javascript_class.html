@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>This is a demo script</title>
+</head>
+<body>
+
+	<h2> Javascript class discussion.</h2>
+	<p id="show"></p>
+	<p id="tareq"></p>
+
+	<script>
+		
+		class Person{
+			constructor(first, last, age){
+				this.firstName = first;
+				this.lastName = last;
+				this.age = age;
+				
+
+			}
+
+			 fullName(){           //Javascirpt method
+				return this.firstName +" "+ this.lastName;
+			}
+		}
+		identity = new Person("Md","Shohanuzzaman", 22);
+		friend = new Person("Md","Tareq", 22);
+
+		document.getElementById('show').innerHTML = identity.fullName()+ " is "+ identity.firstName +" " + identity.lastName + " "+ identity.age;
+		document.getElementById('tareq').innerHTML = friend.firstName +" " + friend.lastName + " "+ friend.age;
+
+
+	</script>
+
+</body>
+</html>
