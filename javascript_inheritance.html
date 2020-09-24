@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>This is a demo script</title>
+	</head>
+	<body>
+		<h2>Javascript class inheritance</h2>
+		<p id="show"></p>
+		<script>
+			
+			class Me{
+				constructor(first){
+					this.firstName = first;
+					
+				}
+				name(){
+					return "This is " + this.firstName;
+				}
+			}
+			class Fullme extends Me{
+				constructor(first,last){
+					super(first);
+					this.lastName = last;
+					
+				}
+				fullName() {
+					return this.name() + " " + this.lastName +" is a boy";
+				}
+			}
+
+			full = new Fullme("Md", "Shohanuzzaman");
+
+			document.getElementById('show').innerHTML = full.fullName();
+
+		</script>
+	</body>
+</html>
