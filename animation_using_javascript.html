@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>This is a demo script</title>
+
+
+	<style>
+		
+		#container{
+			width: 400px;
+			height: 400px;
+			position: relative;
+			background: blue;
+		}
+
+		#animation{
+			width: 50px;
+			height: 50px;
+			position: absolute;
+			background: red;
+		}
+	</style>
+</head>
+<body>
+	<h2>Javascript animation</h2>
+	<button type="button" onclick="Move()">click me</button>
+	<div id="container">
+		<div id="animation"></div>
+	</div>
+
+
+	<script>
+		
+		function Move(){
+
+			var object = document.getElementById('animation');
+			var pos = 0;
+			var id = setInterval(frame,5);
+
+			function frame(){
+				if (pos == 350){
+					// clearInterval(id);
+					pos--;
+					object.style.top = pos - "px";
+
+				}
+
+				else{
+					pos++;
+					object.style.top = pos + "px";
+					object.style.left = pos + "px";
+				}
+			}
+		}
+	</script>
+</body>
+</html>
